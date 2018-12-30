@@ -41,6 +41,7 @@ class Init {
 		    $file = WPAPI_BASEPATH . __NAMESPACE__.'/' . $class . '.php';
 		    if(file_exists($file)){
 		    	require_once $file ;
+		    	//echo $file . '<br>';
 		    }
 		});
 	}

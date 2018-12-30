@@ -2,9 +2,20 @@
 
 namespace Core\Controllers ;
 
-class AdminController {
+use Core\Controllers\BaseController ;
+use Core\Helpers\StaticHelper ;
+
+class AdminController extends BaseController{
 
 	public function __construct(){
-		echo 'Admin Controller loaded' ;
+		parent::__construct();
+		echo StaticHelper::addNumber([1,2,3]);
+		$this->getBe();
 	}
+
+	public function getBe(){
+		$this->getBehaviour();
+	}
+
+
 }
